@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Justin C. Aprill - Machine Learning Engineer / Data Scientist"</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Justin Aprill, Machine Learning, Data Science">
+    <meta name="description" content="Profile page presenting my career experiences and selected side projects including informative demos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <script src="js/profile.js" defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>
+  </head>
+  <style type="text/css">
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* First image (Logo. Hero Image) */
+    .bgimg-1 {
+      background-image: url("images/justin_float_close_black_non_flipped.png");
+      min-height: 80%;
+    }
+
+    @media (max-width:768px){
+      .bgimg-1 {
+      background-image: url("images/justin_float_close.png")}
+    }
+
+    /* Second image (Science Image) */
+    .bgimg-2 {
+      background-image: url("images/justin_science.png");
+      min-height: 400px;
+    }
+
+    /* Third image (Science Image) */
+    .bgimg-3 {
+      background-image: url("images/justin_science.png");
+      min-height: 400px;
+    }
+  </style>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="nav">
+      <a href="https://www.linkedin.com/in/justin-c-aprill" target="_blank" rel="noopener noreferrer" class="nav-item"><i class="fa fa-linkedin-square"></i> JCA</a>
+      <a href="#about" class="nav-item"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#portfolio" class="nav-item"><i class="fa fa-th"></i> PORTFOLIO</a>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 bg_image" id="jca">
+      <div class="hide-max">
+        <img class="center-image-min" src="images/justin_logo.png" alt="logo" id="logo-min"/>
+        <h5>Statistics</h5>
+        <h5>Traditional ML</h5>
+        <h5>Deep Learning</h5>
+      </div>
+      <div class="column-35 hide-min">
+        &nbsp;
+      </div>
+      <div class="column-65 hide-min">
+          <img class="center-image" src="images/justin_logo.png" alt="logo" id="logo"/>
+          <!--h1>Actively seeking to better the world through AI</h1-->
+          <div class="column-33">
+            <img class="center-image" src="images/statistics.png" alt="statistics"/>
+            <h3>Statistics</h3>
+          </div>
+          <div class="column-33">
+            <img class="center-image" src="images/machine_learning.png" alt="machine_learning"/>
+             <h3>Traditional ML</h3>
+          </div>
+          <div class="column-33">
+             <img class="center-image" src="images/deep_learning.png" alt="deep_learning"/>
+            <h3>Deep Learning</h3>
+          </div>
+      </div>
+    </div>
+
+    <div class="container" id="experience">
+      <div class="column-33 separator">
+        <img class="center-image" src="images/tulane_70.png"/>
+        <h2>2004</h2>
+        <h4>BSE Computer Engineering</h4>
+      </div>
+      <div class="column-33 separator">
+        <img class="center-image" src="images/accenture_70.png"/>
+        <h2>16 Years</h2>
+        <h4>Senior Manager</h4>
+      </div>
+      <div class="column-33 separator">
+        <img class="center-image" src="images/snagajob_70.png"/>
+        <h2>3 Years</h2>
+         <h4>Principal ML Engineer</h4>
+      </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="container" id="about">
+      <div class="hide-min">
+        <h1 class="center">&nbsp;</h1>
+        <hr>
+      </div>
+      <div class="content">
+        <img src="images/profile_picture.png" id="profile"/>
+        <h4 class="hide-max">&nbsp;</h4>
+        <h4>SEEKING TO BETTER THE WORLD THROUGH AI</h4>
+        <p>Innovator in the field of artificial intelligence with nearly two decades of experience delivering significant business value for companies through transformational technologies
+        in on-premises and cloud-based deployments. Proven leadership and implementation expertise on numerous large-scale core system transformations spanning North America and Japan.
+        </p>
+        <h4>CORE COMPETENCIES</h4>
+        <p>
+         Machine Learning  |  Data Analytics  |  Robotic Process Automation (RPA)  |  Business Process Management (BPM)  |  Agile Delivery  |  Large Scale Program & Project Management  |  Technical Architecture  |  Application Design and Development  |
+          AWS Cloud  |  AWS SageMaker  |  AWS Neptune  |  Python  |  PyTorch  |  Scikit-Learn  |  XGBoost  |  Pandas  |  Jupyter  |  C#  |  Jira & Git
+        </p>
+      </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 bg_image">
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="content container" id="portfolio">
+        <div class="slides">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <div class="slide">
+              <div class="numbertext">PORTFOLIO: 1 / 3</div>
+                <div class="container">
+                    <div class="hide-min" style="width:100%">
+                            <a href="https://www.snagajob.com" target="_blank" rel="noopener noreferrer">
+                                <img class="center-image-70" style="width=100%; margin:auto; padding-top:5%" src="images/snagajob-portfolio.png"/></a>
+                    </div>
+                     <div class="hide-max" style="width:100%">
+                            <a href="https://www.snagajob.com" target="_blank" rel="noopener noreferrer">
+                                <img class="center-image-min" style="width=100%; margin:auto; padding-top:5%" src="images/snagajob-portfolio-temp.png"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+              <div class="numbertext">PORTFOLIO: 2 / 3</div>
+                <div class="container">
+                    <div class="hide-min" style="width:100%">
+                            <a href="https://www.accenture.com" target="_blank" rel="noopener noreferrer">
+                                <img class="center-image-70" style="width=100%; margin:auto; padding-top:10%" src="images/accenture-portfolio.png"/></a>
+                    </div>
+                     <div class="hide-max" style="width:100%">
+                            <a href="https://www.accenture.com" target="_blank" rel="noopener noreferrer">
+                                <img class="center-image-min" style="width=100%; margin:auto; padding-top:15%" src="images/accenture-portfolio-temp.png"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+              <div class="numbertext">PORTFOLIO: 3 / 3</div>
+                <div class="container">
+                    <div class="hide-min" style="width:100%;">
+                        <a href="https://www.github.com/justin-c-aprill" target="_blank" rel="noopener noreferrer">
+                            <img class="center-image-70" style="width=100%; margin:auto; padding-top:5%" src="images/github_temp.png"/></a>
+                    </div>
+                    <div class="hide-max" style="width:100%;">
+                        <a href="https://www.github.com/justin-c-aprill" target="_blank" rel="noopener noreferrer">
+                            <img class="center-image-min" style="width=100%; margin:auto; padding-top:13%" src="images/github.png"/></a>
+                    </div>
+                </div>
+            </div>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 bg_image">
+    </div>
+
+    <div id="to-top">
+       <a href="#jca"><i class="fa fa-arrow-up"></i></a>
+    </div>
+  </body>
+</html>
