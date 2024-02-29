@@ -1,5 +1,109 @@
-.debug{border-style: solid; border-color: #050; border-width: 12px}
+
+/* Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Image: Parallax 1 */
+.bgimg-1 {
+  background-image: url("../images/justin-float-black.png");
+  @supports (background-image: url("../images/justin-float-black.webp")){
+    background-image: url("../images/justin-float-black.webp");
+  };
+  min-height: 80%;
+}
+
+/* Image: Parallax 2 */
+.bgimg-2 {
+  background-image: url("../images/justin-science.png");
+  @supports (background-image: url("../images/justin-science.webp")){
+    background-image: url("../images/justin-science.webp");
+  };
+  min-height: 400px;
+}
+
+/* Image: Parallax 3 */
+.bgimg-3 {
+  background-image: url("../images/justin-science.png");
+  @supports (background-image: url("../images/justin-science.webp")){
+    background-image: url("../images/justin-science.webp");
+  };
+  min-height: 400px;
+}
+
+/* Image: Parallax 1 */
+@media (max-width:768px){
+  .bgimg-1 {
+  background-image: url("../images/justin-float-close.png");
+  @supports (background-image: url("../images/justin-float-close.webp")){
+    background-image: url("../images/justin-float-close.webp");
+  };
+}}
+
+/* Navigation */
+.nav{position: fixed; top: 0px; background-color: #CCC; opacity: 0.7; width: 100%; z-index: 1}
+.nav .nav-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.nav a{color: #222}
+.nav a:hover{background-color: #EEE}
+.nav a:visited{color: #222}
+.nav a:active{color: #222}
+
+a {text-decoration:none; color: #333}
+.anchor {display: block; position: relative; top: -50px; visibility: hidden;}
+
+#to-top {position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; background-color: #CCC;
+  opacity: 0.7; color: #222; cursor: pointer; padding: 15px; border-radius: 10px; font-size: 18px;
+}
+
+#to-top:hover {background-color: #EEE;}
+
+.scroll-container {
+  width: 100%;
+  height: 8px;
+  background: #CCC;
+  position: fixed;
+  z-index: 1;
+  margin-top: 41px;
+}
+
+.scroll-progress {
+  height: 8px;
+  background: #222;
+  width: 0%;
+  position: fixed;
+  z-index: 1
+}
+
+/* Layout */
+.hide-max{display:none}
+
 body{margin:0}
+.column-33 {float: left; width: 33.33%;}
+.column-50 {float: left; width: 50%;}
+.column-25 {float: left; width: 25%;}
+.column-75 {float: left; width: 75%;}
+.column-65 {float: left; width: 65%;}
+.column-35 {float: left; width: 35%;}
+
+.bg_image{position:relative; opacity:0.9}
+.separator{margin-top: 20px}
+.content{margin-left:auto;margin-right:auto; max-width:1200px; min-height:530px; padding-top:30px}
+.container:after,.container:before
+.container{padding:0.01em 16px}
+
+.center{text-align:center}
+.center-image{display:block; margin-left:auto; margin-right:auto; width:40%}
+.center-image-min{display:block; margin-left:auto; margin-right:auto; width:80%}
+.center-image-70{display:block; margin-left:auto; margin-right:auto; width:70%}
+
+#logo{padding-top: 14%; padding-bottom: 5%}
+#logo-min{padding-top: 14%; padding-bottom: 5%}
+#profile{float:left; padding-right: 50px}
+
+/* Font */
 body,h1,h2,h3,h4,h5,h6 {font-family: "Karla", sans-serif;}
 body, html {height: 100%; color: #777; line-height: 1.8;}
 h1,h2,h3,h4,h5,h6 {text-align:center; margin:0px}
@@ -10,118 +114,18 @@ h4{font-size:20px}
 h5{font-size:18px;color: #FFF;font-weight:normal; float: left; width: 33.33%; margin-top: 0%; background-color: #000; opacity: 0.7;}
 h6{font-size:16px}
 
-.column-33 {float: left; width: 33.33%;}
-.column-50 {float: left; width: 50%;}
-.column-25 {float: left; width: 25%;}
-.column-75 {float: left; width: 75%;}
-.column-65 {float: left; width: 65%;}
-.column-35 {float: left; width: 35%;}
+/* Portfolio Slides */
+.slides {position: relative; background-color: #FFF; padding: 0; height: 500px;}
+.slide {display: none;}
+.next {right: 0px}
+.prev {float: left;}
+.prev, .next {cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -50px;
+  margin-left: 16px; margin-right: 16px; color: #222; font-weight: bold; font-size: 20px; transition: 0.6s ease;
+  border-radius: 10px; background-color: #CCC; opacity: 0.7;}
+.prev:hover, .next:hover {background-color: #EEE;}
+.number-text {color: #222; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;}
 
-.separator{margin-top: 20px}
-
-.hide-max{display:none}
-
-.nav{position: fixed; top: 0px; background-color: #CCC; opacity: 0.7; width: 100%; z-index: 1}
-.nav .nav-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
-.nav a{color: #222}
-.nav a:hover{background-color: #EEE}
-.nav a:visited{color: #222}
-.nav a:active{color: #222}
-
-a {text-decoration:none; color: #333}
-
-.bg_image{position:relative; opacity:0.9}
-
-.content{margin-left:auto;margin-right:auto; max-width:1200px; min-height:530px; padding-top:30px}
-.container:after,.container:before
-.container{padding:0.01em 16px}
-
-.center-image{display:block; margin-left:auto; margin-right:auto; width:40%}
-.center-image-min{display:block; margin-left:auto; margin-right:auto; width:80%}
-.center-image-70{display:block; margin-left:auto; margin-right:auto; width:70%}
-#logo{padding-top: 14%; padding-bottom: 5%}
-#logo-min{padding-top: 14%; padding-bottom: 5%}
-
-.center{text-align:center}
-
-
-#profile{float:left; padding-right: 50px}
-
-#to-top {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #CCC;
-  opacity: 0.7;
-  color: #222;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 18px;
-}
-
-#to-top:hover {
-  background-color: #EEE;
-}
-
-.slides {
-  position: relative;
-  background-color: #FFF;
-  padding: 0;
-  height: 500px;
-}
-
-.slide {
-  display: none;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  margin-left: 16px;
-  margin-right: 16px;
-  color: #222;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 10px;
-  background-color: #CCC;
-  opacity: 0.7;
-}
-
-.next {
-  right: 0px
-}
-
-.prev {
-  float: left;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: #EEE;
-}
-
-.numbertext {
-  color: #222;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-
-
-
-
+/* Media */
 @media (max-width:768px){
     .content{width:100%}
     .content{margin: 16px}
